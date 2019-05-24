@@ -15,22 +15,83 @@
         }
         #instrument {
             height: 116px;
-            width: 812px;
+             width: 812px;
 
-        }
+       }
     </style>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('#c').mousedown(function() {
+                var cNote = document.getElementById("cAudio");
+                cNote.currentTime = 0;
+                cNote.play();
+            });
+        });
+
+        $(document).ready(function(){
+            $('#d').mousedown(function() {
+                var dNote = document.getElementById("dAudio");
+                dNote.currentTime = 0;
+                dNote.play();
+            });
+        });
+        $(document).ready(function(){
+            $('#e').mousedown(function() {
+                var eNote = document.getElementById("eAudio");
+                eNote.currentTime = 0;
+                eNote.play();
+            });
+        });
+        $(document).ready(function(){
+            $('#g').mousedown(function() {
+                var gNote = document.getElementById("gAudio");
+                gNote.currentTime = 0;
+                gNote.play();
+            });
+        });
+        $(document).ready(function(){
+            $('#a').mousedown(function() {
+                var cNote = document.getElementById("aAudio");
+                aNote.currentTime = 0;
+                aNote.play();
+            });
+        });
+
+
+</script>
 
 </head>
 <body>
 
-    <audio>
+    <audio id="cAudio">
         <source src="media/a_note.mp3" type="audio/mpeg"></source>
         <source src="media/a_note.ogg" type="audio/ogg"></source>
         <source src="media/a_note.wav" type="audio/wav"></source>
-
     </audio>
+
+    <audio id="dAudio">
+        <source src="media/b_note.mp3" type="audio/mpeg"></source>
+        <source src="media/b_note.ogg" type="audio/ogg"></source>
+        <source src="media/b_note.wav" type="audio/wav"></source>
+    </audio>
+    <audio id="eAudio">
+        <source src="media/a_note.mp3" type="audio/mpeg"></source>
+        <source src="media/a_note.ogg" type="audio/ogg"></source>
+        <source src="media/a_note.wav" type="audio/wav"></source>
+    </audio>
+    <audio id="gAudio">
+        <source src="media/a_note.mp3" type="audio/mpeg"></source>
+        <source src="media/a_note.ogg" type="audio/ogg"></source>
+        <source src="media/a_note.wav" type="audio/wav"></source>
+    </audio>
+    <audio id="aAudio">
+        <source src="media/a_note.mp3" type="audio/mpeg"></source>
+        <source src="media/a_note.ogg" type="audio/ogg"></source>
+        <source src="media/a_note.wav" type="audio/wav"></source>
+    </audio>
+
 
     <div id="c" class="box"></div>
     <div id="d" class="box"></div>
