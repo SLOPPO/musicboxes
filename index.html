@@ -1,18 +1,54 @@
 <html>
 <head>
     <style>
-        body { background-color: yellow; }
-        .box { background-color: orange; width: 50px; height: 50px; color: orange; float: left}
-        #c {background-color: maroon; }
-        #d {background-color: #ff000d; }
-        #e {background-color: aqua; }
-        #g {background-color: black; }
+        body { background-color: orange; }
+        .box { background-color: orange; width: 100px; height: 100px; color: orange; float: left; margin:5px}
+        #c {background-color: red; }
+        #d {background-color: greenyellow; }
+        #e {background-color: blue; }
+        #g {background-color: grey; }
         #a {background-color: pink; }
 
-        #d:hover {
-            backround-color:;
+        #c:hover{
+            background-color: maroon;
             cursor: pointer;
         }
+        #d:hover{
+            background-color: darkgreen;
+            cursor: pointer;
+        }
+        #e:hover{
+            background-color: darkblue;
+            cursor: pointer;
+        }
+        #g:hover{
+            background-color: black;
+            cursor: pointer;
+        }
+        #a:hover{
+            background-color: purple;
+            cursor: pointer;
+        }
+        #c {
+            background-color: red;
+            border: 5px solid red
+        }
+        #d {
+            background-color: greenyellow;
+            border: 5px solid greenyellow;
+        }
+        #e {
+            background-color: blue;
+            border: 5px solid blue;
+        }
+        #g {
+            background-color: grey;
+            border: 5px solid grey;
+        }
+
+
+
+
         #instrument {
             height: 116px;
              width: 812px;
@@ -53,7 +89,7 @@
         });
         $(document).ready(function(){
             $('#a').mousedown(function() {
-                var cNote = document.getElementById("aAudio");
+                var aNote = document.getElementById("aAudio");
                 aNote.currentTime = 0;
                 aNote.play();
             });
@@ -66,25 +102,25 @@
 <body>
 
     <audio id="cAudio">
-        <source src="media/a_note.mp3" type="audio/mpeg"></source>
-        <source src="media/a_note.ogg" type="audio/ogg"></source>
-        <source src="media/a_note.wav" type="audio/wav"></source>
+        <source src="media/c_note.mp3" type="audio/mpeg"></source>
+        <source src="media/c_note.ogg" type="audio/ogg"></source>
+        <source src="media/c_note.wav" type="audio/wav"></source>
     </audio>
 
     <audio id="dAudio">
-        <source src="media/b_note.mp3" type="audio/mpeg"></source>
-        <source src="media/b_note.ogg" type="audio/ogg"></source>
-        <source src="media/b_note.wav" type="audio/wav"></source>
+        <source src="media/d_note.mp3" type="audio/mpeg"></source>
+        <source src="media/d_note.ogg" type="audio/ogg"></source>
+        <source src="media/d_note.wav" type="audio/wav"></source>
     </audio>
     <audio id="eAudio">
-        <source src="media/a_note.mp3" type="audio/mpeg"></source>
-        <source src="media/a_note.ogg" type="audio/ogg"></source>
-        <source src="media/a_note.wav" type="audio/wav"></source>
+        <source src="media/e_note.mp3" type="audio/mpeg"></source>
+        <source src="media/e_note.ogg" type="audio/ogg"></source>
+        <source src="media/e_note.wav" type="audio/wav"></source>
     </audio>
     <audio id="gAudio">
-        <source src="media/a_note.mp3" type="audio/mpeg"></source>
-        <source src="media/a_note.ogg" type="audio/ogg"></source>
-        <source src="media/a_note.wav" type="audio/wav"></source>
+        <source src="media/g_note.mp3" type="audio/mpeg"></source>
+        <source src="media/g_note.ogg" type="audio/ogg"></source>
+        <source src="media/g_note.wav" type="audio/wav"></source>
     </audio>
     <audio id="aAudio">
         <source src="media/a_note.mp3" type="audio/mpeg"></source>
@@ -98,7 +134,7 @@
     <div id="e" class="box"></div>
     <div id="g" class="box"></div>
     <div id="a" class="box"></div>
-    <div id="B" class="box"></div>
+    <div id="b" class="box"></div>
 
 </body>
 </html>
